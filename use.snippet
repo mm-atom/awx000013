@@ -1,9 +1,11 @@
 	// 显示模态对话框
-	/**
-	 * ${0:变量注释}
-	 */
-	const r$CURRENT_SECONDS_UNIX = await(() => {
-		const p1 = $1;	// 参数注释
-		const p2 = $2;	// 参数注释
-		return awx13(p1, p2);
+	await(() => {
+		const title = '$1';	// 提示的标题
+		const content = '$2';	// 提示的内容
+		const confirmText = '${3:确认}';	// 确认按钮的文字，最多 4 个字符
+		const confirmColor = '$4';	// 确认按钮的文字颜色，必须是 16 进制格式的颜色字符串
+		const showCancel = '${5|false,true|}';	// 是否显示取消按钮
+		const cancelText = '${6:取消}';	// showCancel为true时有效，取消按钮的文字，最多 4 个字符
+		const cancelColor = '$7';	// 取消按钮的文字颜色，必须是 16 进制格式的颜色字符串
+		return awx13(title, content, confirmText, confirmColor, showCancel, cancelText, cancelColor);
 	})();
