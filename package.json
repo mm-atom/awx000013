@@ -1,6 +1,6 @@
 {
 	"name": "@mmstudio/awx000013",
-	"version": "1.0.202004030930",
+	"version": "1.0.202004170922",
 	"description": "显示模态对话框",
 	"scripts": {
 		"test": "tsc -w",
